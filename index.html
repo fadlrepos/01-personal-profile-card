@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal profile card for a front-end developer.">
+    <title>Fadlallah Bouchemla | Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="profile-card">
+        <div class="card-banner"></div>
+
+        <div class="profile-content">
+            <img
+                src="assets/profile.jpg"
+                alt="Profile portrait"
+                class="profile-image"
+                onerror="this.style.display='none'"
+            >
+
+            <h1>Fadlallah Bouchemla</h1>
+            <p class="role">Front-End Developer in Training</p>
+
+            <p class="bio">
+                I'm a developer passionate about building websites and learning
+                new technologies. I enjoy turning ideas into clean, responsive
+                web experiences.
+            </p>
+
+            <div class="skills" id="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/fadlrepos" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+
+            <div class="actions">
+                <button id="theme-toggle" class="secondary-button" type="button">☀️ Switch Theme</button>
+                <button id="about-toggle" class="secondary-button" type="button">More About Me</button>
+                <button id="skills-toggle" class="secondary-button" type="button">Hide Skills</button>
+                <button id="copy-email" class="secondary-button" type="button">Copy Email</button>
+            </div>
+
+            <p id="about-text" hidden>
+                I'm currently improving my JavaScript skills and building projects
+                to grow as a front-end developer.
+            </p>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <a href="mailto:your-email@example.com" class="contact-button">Contact Me</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
